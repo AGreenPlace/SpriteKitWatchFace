@@ -94,6 +94,7 @@ CGFloat workingRadiusForFaceOfSizeWithAngle(CGSize faceSize, CGFloat angle)
 
 		self.colorRegionStyle = ColorRegionStyleDynamicDuo;
 		self.showDate = YES;
+        self.useOutlinedNumbers = FALSE;
 		
 		[self refreshTheme];
 		
@@ -163,7 +164,7 @@ CGFloat workingRadiusForFaceOfSizeWithAngle(CGSize faceSize, CGFloat angle)
 		
 		CGFloat h = 25;
 		
-		NSDictionary *attribs = @{NSFontAttributeName : [NSFont systemFontOfSize:h weight:NSFontWeightMedium], NSForegroundColorAttributeName : self.textColor};
+        NSDictionary *attribs = @{NSFontAttributeName : [NSFont systemFontOfSize:h weight:NSFontWeightMedium], NSForegroundColorAttributeName : self.useOutlinedNumbers ? [self.textColor colorWithAlphaComponent:0] : self.textColor, NSStrokeColorAttributeName : self.textColor, NSStrokeColorAttributeName : self.textColor, NSStrokeWidthAttributeName : self.useOutlinedNumbers ? @3.0 : @0};
 		
 		NSAttributedString *labelText = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%i", i == 0 ? 12 : i] attributes:attribs];
 		
@@ -388,7 +389,7 @@ CGFloat workingRadiusForFaceOfSizeWithAngle(CGSize faceSize, CGFloat angle)
 		
 		[faceMarkings addChild:labelNode];
 		
-		NSDictionary *attribs = @{NSFontAttributeName : [NSFont fontWithName:@"Futura-Medium" size:fontSize], NSForegroundColorAttributeName : self.textColor};
+        NSDictionary *attribs = @{NSFontAttributeName : [NSFont fontWithName:@"Futura-Medium" size:fontSize], NSForegroundColorAttributeName : self.useOutlinedNumbers ? [self.textColor colorWithAlphaComponent:0] : self.textColor, NSStrokeColorAttributeName : self.textColor, NSStrokeWidthAttributeName : self.useOutlinedNumbers ? @3.0 : @0};
 		
 		NSAttributedString *labelText = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%i", i] attributes:attribs];
 		

@@ -67,6 +67,35 @@
     [super didDeactivate];
 }
 
+- (IBAction)onShapePress {
+    FaceScene *scene = (FaceScene *)self.scene.scene;
+    scene.useRoundFace = !scene.useRoundFace;
+    [scene refreshTheme];
+}
+
+- (IBAction)onTicksPress {
+    FaceScene *scene = (FaceScene *)self.scene.scene;
+    if (scene.tickmarkStyle < TickmarkStyleNone)
+        scene.tickmarkStyle += 1;
+    else
+        scene.tickmarkStyle = 0;
+    [scene refreshTheme];
+}
+
+- (IBAction)onNumbersPress {
+    FaceScene *scene = (FaceScene *)self.scene.scene;
+    if (scene.numeralStyle < NumeralStyleNone)
+        scene.numeralStyle += 1;
+    else
+        scene.numeralStyle = 0;
+    [scene refreshTheme];
+}
+- (IBAction)onOutlineNumbersPress {
+    FaceScene *scene = (FaceScene *)self.scene.scene;
+    scene.useOutlinedNumbers = !scene.useOutlinedNumbers;
+    [scene refreshTheme];
+}
+
 #pragma mark -
 
 CGFloat totalRotation = 0;

@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="watchOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
     </dependencies>
@@ -20,6 +21,30 @@
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
                     </items>
+                    <menu key="menu" id="fqo-Xx-mmo">
+                        <items>
+                            <menuItem title="Shape" icon="shuffle" id="D0B-X1-kcc">
+                                <connections>
+                                    <action selector="onShapePress" destination="OkN-RN-cDt" id="fIs-CX-Kup"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Ticks" icon="shuffle" id="cd7-RR-DlM">
+                                <connections>
+                                    <action selector="onTicksPress" destination="OkN-RN-cDt" id="tWa-uI-cKW"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Numbers" icon="shuffle" id="39l-XJ-Zrq">
+                                <connections>
+                                    <action selector="onNumbersPress" destination="OkN-RN-cDt" id="7ef-W8-rpX"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Outline Numbers" icon="shuffle" id="vlG-bV-6OL">
+                                <connections>
+                                    <action selector="onOutlineNumbersPress" destination="OkN-RN-cDt" id="ooP-ab-O3c"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                     <connections>
                         <outlet property="scene" destination="Vbc-Dd-smI" id="Is8-Wc-8BM"/>

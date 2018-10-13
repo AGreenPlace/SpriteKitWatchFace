@@ -11,68 +11,68 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef enum : NSUInteger {
-	ThemeHermesPink,
-	ThemeHermesOrange,
-	ThemeNavy,
-	ThemeTidepod,
-	ThemeBretonnia,
-	ThemeNoir,
-	ThemeContrast,
-	ThemeVictoire,
-	ThemeLiquid,
-	ThemeAngler,
-	ThemeSculley,
-	ThemeKitty,
-	ThemeDelay,
-	ThemeDiesel,
-	ThemeLuxe,
-	ThemeSage,
-	ThemeBondi,
-	ThemeTangerine,
-	ThemeStrawberry,
-	ThemePawn,
-	ThemeRoyal,
-	ThemeMarques,
-	ThemeVox,
-	ThemeSummer,
-	ThemeMAX
+    ThemeHermesPink,
+    ThemeHermesOrange,
+    ThemeNavy,
+    ThemeTidepod,
+    ThemeBretonnia,
+    ThemeNoir,
+    ThemeContrast,
+    ThemeVictoire,
+    ThemeLiquid,
+    ThemeAngler,
+    ThemeSculley,
+    ThemeKitty,
+    ThemeDelay,
+    ThemeDiesel,
+    ThemeLuxe,
+    ThemeSage,
+    ThemeBondi,
+    ThemeTangerine,
+    ThemeStrawberry,
+    ThemePawn,
+    ThemeRoyal,
+    ThemeMarques,
+    ThemeVox,
+    ThemeSummer,
+    ThemeMAX
 } Theme;
 
 typedef enum : NSUInteger {
-	NumeralStyleAll,
-	NumeralStyleCardinal,
-	NumeralStyleNone,
-	NumeralStyleMAX
+    NumeralStyleAll,
+    NumeralStyleCardinal,
+    NumeralStyleNone,
+    NumeralStyleMAX
 } NumeralStyle;
 
 typedef enum : NSUInteger {
-	TickmarkStyleAll,
-	TickmarkStyleMajor,
-	TickmarkStyleMinor,
-	TickmarkStyleNone,
-	TickmarkStyleMAX
+    TickmarkStyleAll,
+    TickmarkStyleMajor,
+    TickmarkStyleMinor,
+    TickmarkStyleNone,
+    TickmarkStyleMAX
 } TickmarkStyle;
 
 typedef enum : NSUInteger {
-	FaceStyleRound,
-	FaceStyleRectangular,
-	FaceStyleMAX
+    FaceStyleRound,
+    FaceStyleRectangular,
+    FaceStyleMAX
 } FaceStyle;
 
 typedef enum : NSUInteger {
-	ColorRegionStyleNone,
-	ColorRegionStyleDynamicDuo,
-	ColorRegionStyleHalf,
-	ColorRegionStyleCircle,
-	ColorRegionStyleRing,
-	ColorRegionStyleMAX
+    ColorRegionStyleNone,
+    ColorRegionStyleDynamicDuo,
+    ColorRegionStyleHalf,
+    ColorRegionStyleCircle,
+    ColorRegionStyleRing,
+    ColorRegionStyleMAX
 } ColorRegionStyle;
 
 typedef enum : NSUInteger {
-	TickmarkShapeRectangular,
-	TickmarkShapeCircular,
-	TickmarkShapeTriangular,
-	TickmarkShapeMAX
+    TickmarkShapeRectangular,
+    TickmarkShapeCircular,
+    TickmarkShapeTriangular,
+    TickmarkShapeMAX
 } TickmarkShape;
 
 @interface FaceScene : SKScene <SKSceneDelegate>
@@ -105,6 +105,7 @@ typedef enum : NSUInteger {
 @property BOOL useMasking;
 @property BOOL showDate;
 @property BOOL showCenterDisc;
+@property BOOL useOutlinedNumbers;
 
 @property CGSize faceSize;
 
