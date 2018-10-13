@@ -637,14 +637,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				DEVELOPMENT_TEAM = Y4FXBM45HW;
 				INFOPLIST_FILE = "SpriteKitWatchFace WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.SpriteKitWatchFace.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = it.AGreenPlace.SpriteKitWatchFace.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -658,14 +658,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				DEVELOPMENT_TEAM = Y4FXBM45HW;
 				INFOPLIST_FILE = "SpriteKitWatchFace WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.SpriteKitWatchFace.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = it.AGreenPlace.SpriteKitWatchFace.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -679,10 +679,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				DEVELOPMENT_TEAM = Y4FXBM45HW;
 				IBSC_MODULE = SpriteKitWatchFace_WatchKit_Extension;
 				INFOPLIST_FILE = "SpriteKitWatchFace WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.SpriteKitWatchFace.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = it.AGreenPlace.SpriteKitWatchFace.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = NO;
@@ -696,10 +696,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				DEVELOPMENT_TEAM = Y4FXBM45HW;
 				IBSC_MODULE = SpriteKitWatchFace_WatchKit_Extension;
 				INFOPLIST_FILE = "SpriteKitWatchFace WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.SpriteKitWatchFace.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = it.AGreenPlace.SpriteKitWatchFace.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = NO;
@@ -713,13 +713,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				DEVELOPMENT_TEAM = Y4FXBM45HW;
 				INFOPLIST_FILE = SpriteKitWatchFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.SpriteKitWatchFace;
+				PRODUCT_BUNDLE_IDENTIFIER = it.AGreenPlace.SpriteKitWatchFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -730,13 +730,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				DEVELOPMENT_TEAM = Y4FXBM45HW;
 				INFOPLIST_FILE = SpriteKitWatchFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.SpriteKitWatchFace;
+				PRODUCT_BUNDLE_IDENTIFIER = it.AGreenPlace.SpriteKitWatchFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -750,14 +750,14 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				DEVELOPMENT_TEAM = Y4FXBM45HW;
 				INFOPLIST_FILE = DesktopShim/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.SKWFDesktopShim;
+				PRODUCT_BUNDLE_IDENTIFIER = it.AGreenPlace.SpriteKitWatchFace.SKWFDesktopShim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -771,14 +771,14 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				DEVELOPMENT_TEAM = Y4FXBM45HW;
 				INFOPLIST_FILE = DesktopShim/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.highcaffeinecontent.SKWFDesktopShim;
+				PRODUCT_BUNDLE_IDENTIFIER = it.AGreenPlace.SpriteKitWatchFace.SKWFDesktopShim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
