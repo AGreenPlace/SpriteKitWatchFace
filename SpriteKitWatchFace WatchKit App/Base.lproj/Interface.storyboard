@@ -16,7 +16,20 @@
                     <items>
                         <group width="1" alignment="left" spacing="0.0" id="r4w-8v-T2Z">
                             <items>
-                                <spriteKitScene width="184" height="224" alignment="center" preferredFramesPerSecond="60" scene="FaceScene.sks" id="Vbc-Dd-smI"/>
+                                <spriteKitScene width="184" height="224" alignment="center" preferredFramesPerSecond="60" scene="FaceScene.sks" id="Vbc-Dd-smI">
+                                    <gestureRecognizers>
+                                        <swipeGestureRecognizer direction="2" id="Qcl-Yg-ISJ">
+                                            <connections>
+                                                <action selector="onFaceLeftSwipe" destination="OkN-RN-cDt" id="fXS-24-hrD"/>
+                                            </connections>
+                                        </swipeGestureRecognizer>
+                                        <swipeGestureRecognizer id="ZG0-VE-Q1N">
+                                            <connections>
+                                                <action selector="onFaceRightSwipe" destination="OkN-RN-cDt" id="F3G-5j-Nsk"/>
+                                            </connections>
+                                        </swipeGestureRecognizer>
+                                    </gestureRecognizers>
+                                </spriteKitScene>
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>

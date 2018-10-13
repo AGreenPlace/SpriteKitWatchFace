@@ -69,13 +69,16 @@
 
 - (IBAction)onShapePress {
     FaceScene *scene = (FaceScene *)self.scene.scene;
-    scene.useRoundFace = !scene.useRoundFace;
+    if (scene.faceStyle < FaceStyleMAX - 1)
+        scene.faceStyle += 1;
+    else
+        scene.faceStyle = 0;
     [scene refreshTheme];
 }
 
 - (IBAction)onTicksPress {
     FaceScene *scene = (FaceScene *)self.scene.scene;
-    if (scene.tickmarkStyle < TickmarkStyleNone)
+    if (scene.tickmarkStyle < TickmarkStyleMAX - 1)
         scene.tickmarkStyle += 1;
     else
         scene.tickmarkStyle = 0;
@@ -84,17 +87,50 @@
 
 - (IBAction)onNumbersPress {
     FaceScene *scene = (FaceScene *)self.scene.scene;
-    if (scene.numeralStyle < NumeralStyleNone)
+    if (scene.numeralStyle < NumeralStyleMAX - 1)
         scene.numeralStyle += 1;
     else
         scene.numeralStyle = 0;
     [scene refreshTheme];
 }
+
 - (IBAction)onOutlineNumbersPress {
     FaceScene *scene = (FaceScene *)self.scene.scene;
     scene.useOutlinedNumbers = !scene.useOutlinedNumbers;
     [scene refreshTheme];
 }
+
+- (IBAction)onTickTypePress {
+    FaceScene *scene = (FaceScene *)self.scene.scene;
+    if (scene.majorTickmarkShape < TickmarkShapeMAX - 1)
+        if (scene.minorTickmarkShape > scene.majorTickmarkShape)
+            scene.majorTickmarkShape += 1;
+        else
+            scene.minorTickmarkShape += 1;
+    else{
+        scene.minorTickmarkShape = 0;
+        scene.majorTickmarkShape = 0;
+    }
+    [scene refreshTheme];
+}
+
+- (IBAction)onFaceLeftSwipe {
+    [self onRegionPress];
+}
+
+- (IBAction)onFaceRightSwipe {
+    [self onTickTypePress];
+}
+
+- (IBAction)onRegionPress {
+    FaceScene *scene = (FaceScene *)self.scene.scene;
+    if (scene.colorRegionStyle < ColorRegionStyleMAX - 1)
+        scene.colorRegionStyle += 1;
+    else
+        scene.colorRegionStyle = 0;
+    [scene refreshTheme];
+}
+
 
 #pragma mark -
 
