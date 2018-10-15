@@ -46,11 +46,6 @@ typedef enum : NSUInteger {
 } NumeralStyle;
 
 typedef enum : NSUInteger {
-    TickmarkStyleAll,
-    TickmarkStyleMajor,
-    TickmarkStyleMinor,
-    TickmarkStyleNone,
-    TickmarkStyleMAX
 	TickmarkStyleAll,
 	TickmarkStyleMajor,
 	TickmarkStyleMinor,
