@@ -129,8 +129,6 @@ typedef enum : NSUInteger {
 
 @property BOOL useBackgroundImageOverlay;
 @property BOOL useMasking;
-@property BOOL showDate;
-@property BOOL showCenterDisc;
 @property BOOL useOutlinedNumbers;
 
 @property CGSize faceSize;

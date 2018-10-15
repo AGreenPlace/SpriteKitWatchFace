@@ -96,7 +96,6 @@ CGFloat workingRadiusForFaceOfSizeWithAngle(CGSize faceSize, CGFloat angle)
 		self.majorTickWidth = 2;
 
 		self.colorRegionStyle = ColorRegionStyleDynamicDuo;
-		self.showDate = YES;
         self.useOutlinedNumbers = FALSE;
 		
 		self.dateStyle = DateStyleDayDate;
