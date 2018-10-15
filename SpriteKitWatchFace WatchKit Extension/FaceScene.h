@@ -51,6 +51,12 @@ typedef enum : NSUInteger {
     TickmarkStyleMinor,
     TickmarkStyleNone,
     TickmarkStyleMAX
+	TickmarkStyleAll,
+	TickmarkStyleMajor,
+	TickmarkStyleMinor,
+	TickmarkStyleStackMajor,
+	TickmarkStyleNone,
+	TickmarkStyleMAX
 } TickmarkStyle;
 
 typedef enum : NSUInteger {
@@ -75,6 +81,28 @@ typedef enum : NSUInteger {
     TickmarkShapeMAX
 } TickmarkShape;
 
+typedef enum : NSUInteger {
+	DateStyleNone,
+	DateStyleDay,
+	DateStyleDate,
+	DateStyleDayDate,
+	DateStyleMAX
+} DateStyle;
+
+typedef enum : NSUInteger {
+	DateQuadrantRight,
+	DateQuadrantBottom,
+	DateQuadrantLeft,
+	DateQuadrantTop,
+	DateQuadrantMAX
+} DateQuadrant;
+
+typedef enum : NSUInteger {
+	CenterDiscStyleNone,
+	CenterDiscStyleEnabled,
+	CenterDiscStyleMAX,
+} CenterDiscStyle;
+
 @interface FaceScene : SKScene <SKSceneDelegate>
 
 -(void)refreshTheme;
@@ -86,6 +114,9 @@ typedef enum : NSUInteger {
 @property TickmarkShape minorTickmarkShape;
 @property FaceStyle faceStyle;
 @property ColorRegionStyle colorRegionStyle;
+@property DateStyle dateStyle;
+@property DateQuadrant dateQuadrant;
+@property CenterDiscStyle centerDiscStyle;
 
 @property SKColor *colorRegionColor;
 @property SKColor *faceBackgroundColor;
@@ -101,13 +132,17 @@ typedef enum : NSUInteger {
 @property SKColor *alternateMinorMarkColor;
 @property SKColor *alternateTextColor;
 
-@property BOOL useProgrammaticLayout;
+@property BOOL useBackgroundImageOverlay;
 @property BOOL useMasking;
 @property BOOL showDate;
 @property BOOL showCenterDisc;
 @property BOOL useOutlinedNumbers;
 
 @property CGSize faceSize;
+
+@property CGFloat majorTickHeight;
+@property CGFloat majorTickWidth;
+@property CGFloat minorTickHeight;
 
 @end
 
